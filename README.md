@@ -1,4 +1,4 @@
 # C-Algorithms
 
-Here We code for Addition Subtraction and Multipication
+Find Roots of a Quardatic Equation
   
