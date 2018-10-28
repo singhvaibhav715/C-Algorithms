@@ -2,13 +2,28 @@
 #include<conio.h>
 void main()
 {
-int n,a,f,m,l,s,arr[100];
+int i,j,temp,n,a,f,m,l,s,arr[100];
 clrscr();
 printf("Enter no. of elements \n");
 scanf("%d",&a);
-printf("Enter integers in asceding order \n");
+printf("Enter integers \n");
 for(n=0;n<a;n++)
 scanf("%d",&arr[n]);
+for(i=1;i<=n-1;i++)
+{
+j=i;
+while(j>0&&arr[j]<arr[j-1])
+{
+temp=arr[j];
+arr[j]=arr[j-1];
+arr[j-1]=temp;
+j--;
+}
+}
+printf("ascending order: \n");
+for(i=0;i<=n-1;i++) {
+printf("%d \n",arr[i]);
+}
 printf("Enter no. which you are finding \n");
 scanf("%d",&s);
 f=0;
