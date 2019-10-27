@@ -1,0 +1,33 @@
+#include <stdio.h>
+#include <conio.h>
+#include <string.h>
+void main()
+{
+long long int n,i,count=0;
+int l,j;
+char str[10];
+clrscr();
+printf("Enter string : ");
+scanf("%s",str);
+printf("Enter n : ");
+scanf("%lld",&n);
+l=strlen(str);
+j=0;
+for(i=1;i<=n;i++)
+{
+if(j==l)
+{
+j=0;
+}
+if(str[j]=='a')
+count++;
+j++;
+}
+printf("count = %lld",count);
+getch();
+}
+
+
+
+
+

@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <conio.h>
+void main()
+{
+long long int n;
+long long int sum;
+float val;
+clrscr();
+printf("Enter n: ");
+scanf("%lld",&n);
+sum=n*n;
+val=sum/999999999.0;
+printf("sum = %lld\nval = %f",sum,val);
+getch();
+}
+
